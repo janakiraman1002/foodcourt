@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.pages{
+    position: relative;
+}
+.page-1{
+    width: 100%;
+    position: relative;
+}
+.page-1 nav {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    justify-content: space-between;
+    background-image: linear-gradient(#fa2a06,#F9E400);
+    
+}
+nav .burger i{
+    font-size: 29px;
+    font-weight: bold;
+    padding-left: 10px;
+    display: none;
+    cursor: pointer;
+}
+nav .logo{
+    padding-right:18% ;
+}
+nav .logo h1{
+    color: white;
+    font-weight: bolder;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 60%;
+    justify-content: space-around;
+    padding-top:13px ;
+    padding-right: 5%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+nav i{
+    font-size: 25px;
+}
+nav #order{
+    display: none;
+}
+.cart-icon {
+    position: sticky;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+  }
+  #order-count {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+
+
+                                   /* foods */
+.container
+{
+    margin: 20px 0px;
+    position: relative;
+}
+.foods-li{
+    display: flex;
+    overflow-x:scroll ;
+}
+.foods-li::-webkit-scrollbar{
+    display: none;
+}
+.menu h3{
+   padding-left: 2%;
+}
+.list img{
+    width: 150px;
+    height: 200px;
+}
+
+                                        /* Grid*/
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px 0px 0px 20px;
+}
+
+                                   /* Hover */
+
+nav ul li a:hover{
+    color: #fcfaf9;
+}
+
+
+
+                                    /* Tap view */
+
+@media (max-width:992px)
+{
+    .images{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0px;
+        row-gap: 30px;
+        padding: 0px 3% 0 11%;
+    
+    }
+    .images .card{
+        width: 400px;
+    }
+    nav{
+        padding: 20px;
+    }
+    nav .logo{
+        padding-right: 2%;
+    }
+    .logo h1
+    {
+        font-size: 45px;
+    }
+    nav ul{
+      display: none;
+    }
+    nav .burger i{
+        display: block;
+        font-size: 35px;
+    }
+    .cart-icon i{
+        font-size: 35px;
+    }
+}
+
+
+                                          /* mobile view */
+
+@media (max-width:576px)
+{
+    .images{
+        grid-template-columns: 1fr;
+        padding-left:15% ;
+    }
+}
